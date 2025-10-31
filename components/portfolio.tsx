@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { ExternalLink, Github } from "lucide-react"
+import AnimatedProjectBackground from "./animated-project-background"
 
 const projects = [
   {
@@ -30,7 +31,8 @@ const projects = [
     description:
       "Predictive healthcare model using machine learning to forecast disease risk and enable early intervention strategies.",
     technologies: ["PyTorch", "Healthcare AI", "Data Science", "Feature Engineering"],
-    image: "/ai-health-prediction-healthcare.jpg",
+    image: "/healthcare-ai-medical-prediction-system-with-digit.jpg",
+    hasAnimatedBackground: true,
   },
 ]
 
@@ -54,10 +56,17 @@ export default function Portfolio() {
               onClick={() => setSelectedProject(project)}
             >
               <div className="relative overflow-hidden rounded-xl mb-6">
+                {project.hasAnimatedBackground && (
+                  <div className="absolute inset-0 z-10">
+                    <AnimatedProjectBackground />
+                  </div>
+                )}
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className={`w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 ${
+                    project.hasAnimatedBackground ? "relative z-20" : ""
+                  }`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
