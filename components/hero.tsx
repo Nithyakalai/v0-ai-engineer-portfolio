@@ -16,9 +16,9 @@ export default function Hero() {
         <div className="mb-8 flex justify-center">
           <div className="relative w-48 h-48 animate-float">
             <div className="absolute inset-0 rounded-full border-2 border-primary animate-glow-pulse" />
-            <div className="absolute inset-2 rounded-full bg-gradient-to-b from-card to-card/80 flex items-center justify-center">
+            <div className="absolute inset-2 rounded-full bg-gradient-to-b from-card to-card/80 flex items-center justify-center overflow-hidden">
               <img
-                src="/images/design-mode/PORTFOLIO%20PHOTO.jpg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-10-31%20at%2015.50.24-MiQFaA8jpKUI5g0qWthBnbZW4jlH2u.jpeg"
                 alt="Nithya K"
                 className="w-44 h-44 rounded-full object-cover"
               />
@@ -29,7 +29,7 @@ export default function Hero() {
         {/* Title */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-in-up" style={{ animationDelay: "0.1s" }}>
           <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
-            Hi, I am 
+            Hi, I am
           </span>
           <br />
           <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
