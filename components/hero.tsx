@@ -28,9 +28,12 @@ export default function Hero() {
 
         {/* Title */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-in-up" style={{ animationDelay: "0.1s" }}>
-          <span className="text-foreground">Hi</span>{" "}
           <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
-            Welcome to my Portfolio
+            Hi, I am 
+          </span>
+          <br />
+          <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
+            Nithya. K
           </span>
         </h1>
 
